@@ -5,7 +5,7 @@
     <tr>
       <th scope="col">Note</th>
       <th scope="col">Date added</th>
-      <th scope="col"></th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +14,7 @@
       <td>{{note.text}}</td>
       <td>{{note.date}}</td>
       <td>
+        <a href="/edit-note/{{note.id}}" class="btn btn-success">Edit</a>
         <button
           type="button"
           class="btn btn-danger"
